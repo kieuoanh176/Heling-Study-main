@@ -1,0 +1,49 @@
+.line {
+  .light_line {
+    height: 0.1em;
+    opacity: 0.1;
+    background-color: #faf5ef;
+  }
+  .bold_line {
+    height: 0.1em;
+    opacity: 0.4;
+    margin: 0.4em 0;
+    background-color: #faf5ef;
+  }
+  &_black {
+    .light_line {
+      height: 0.1em;
+      opacity: 0.1;
+      background-color: #222120;
+    }
+    .bold_line {
+      height: 0.1em;
+      opacity: 0.4;
+      margin: 0.4em 0;
+      background-color: #222120;
+    }
+  }
+  &_small {
+    margin: 3rem 0 2rem 4rem;
+    .light_line {
+      margin-inline: 2rem;
+    }
+    &_center {
+      margin-inline: auto;
+    }
+  }
+}
+.line_gardient {
+  width: calc(100%-136px);
+  margin: 0 auto;
+  // width: 600px;
+  height: 20px;
+  background-image: linear-gradient(
+    to right,
+    #ffdcc6,
+    #ebb288,
+    #e5955b,
+    #c86128,
+    #732a18
+  );
+}

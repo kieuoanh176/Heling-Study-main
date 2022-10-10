@@ -1,0 +1,38 @@
+.reveal {
+  position: relative;
+  //   transform: translateY(150px);
+  opacity: 0;
+  //   transition: 2s all ease;
+}
+.reveal.active {
+  //   transform: translateY(0);
+  opacity: 1;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    color: #ffc8dd;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    color: #846248;
+  }
+}
+@keyframes fade-in-hover {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    color: #f96f5d;
+    text-decoration: underline;
+  }
+}

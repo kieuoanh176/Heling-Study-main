@@ -1,0 +1,25 @@
+.skin_color {
+  height: 800px;
+  width: 100%;
+  background-color: $color_background;
+  .skin_color_img {
+    margin-inline: 40px;
+    margin-bottom: 80px;
+    img {
+      &:first-child,
+      &:last-child {
+        width: 280px;
+      }
+      &:nth-child(2) {
+        width: 320px;
+      }
+    }
+  }
+  .line_gardient {
+    margin-inline: 72px;
+  }
+  &_text {
+    width: calc(100%-136px);
+    margin-bottom: 20px;
+  }
+}
